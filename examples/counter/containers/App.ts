@@ -7,7 +7,7 @@ import * as CounterActions from '../actions/CounterActions';
   selector: 'root',
   directives: [Counter],
   template: `
-  <counter [counter]="counter"
+  <counter [counter]="counterXYZ"
     [increment]="increment"
     [decrement]="decrement"
     [incrementIfOdd]="incrementIfOdd"
@@ -30,7 +30,7 @@ export default class App implements OnDestroy {
 
   mapStateToThis(state) {
     return {
-      counter: state.counter
+      counterXYZ: state.counter
     };
   }
 
